@@ -412,7 +412,7 @@ export class MiniThermostatCard extends LitElement {
         icon="${this._getIcon(`${direction}`)}"
         @click="${() => this._changeTemperature(change)}"
         class="action"
-      >
+      ><ha-icon icon="${this._getIcon(`${direction}`)}"></ha-icon>
       </ha-icon-button>
     `;
   }
